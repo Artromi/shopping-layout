@@ -78,6 +78,7 @@ p {
 .order-area {
   background-color: whitesmoke;
   border-radius: 1rem;
+  padding: 0.25rem;
 }
 
 h2 {
@@ -85,7 +86,7 @@ h2 {
   text-align: center;
   background-color: white;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   margin: 1rem;
   margin-top: 1rem;
 }
