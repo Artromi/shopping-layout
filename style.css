@@ -121,6 +121,8 @@ select + label {
   margin-left: 2rem;
 }
 
+/* ---COLOR PICKER--- */
+
 #color-picker {
   margin-top: 1rem;
 }
@@ -131,6 +133,7 @@ select + label {
   width: 1.15em;
   height: 1.15em;
   border-radius: 50%;
+  transform: translateY(0.25rem);
 }
 
 input[value="blue"] {
@@ -162,6 +165,6 @@ input[value="black-white"] {
   background-image: var(--clr-shoe-gradient-black);
 }
 
-.radio-buttons {
-  transform: translateY(0.25rem);
+.radio-buttons:checked {
+  border: solid red;
 }
