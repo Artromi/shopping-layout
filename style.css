@@ -4,13 +4,21 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+:root {
+  --clr-font: #28282b;
+  --clr-font-secondary: gray;
+  --clr-bgr: whitesmoke;
+  --clr-bgr-secondary: white;
 }
 
 html {
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
+  color: var(--clr-font);
+}
+
+body {
+  margin: 0;
 }
 
 main {
@@ -19,11 +27,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: whitesmoke;
+  background-color: var(--clr-bgr);
 }
 
 .product-card {
-  background-color: white;
+  background-color: var(--clr-bgr-secondary);
   border-radius: 1rem;
   overflow: hidden;
   max-width: 30%;
@@ -43,13 +51,13 @@ figure {
 figcaption {
   width: 100%;
   padding: 2rem 0.5rem 0.125rem 0.5rem;
-  background-image: linear-gradient(transparent, white);
-  color: gray;
+  background-image: linear-gradient(transparent, var(--clr-bgr-secondary));
+  color: var(--clr-font-secondary);
   font-size: 0.5rem;
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 0.5rem solid white;
+  border-bottom: 0.5rem solid var(--clr-bgr-secondary);
 }
 
 .side-information {
@@ -76,7 +84,7 @@ p {
 }
 
 .order-area {
-  background-color: whitesmoke;
+  background-color: var(--clr-bgr);
   border-radius: 1rem;
   padding: 0.25rem;
 }
@@ -84,7 +92,7 @@ p {
 h2 {
   font-size: 0.75rem;
   text-align: center;
-  background-color: white;
+  background-color: var(--clr-bgr-secondary);
   padding: 0.5rem;
   border-radius: 0.25rem;
   margin: 1rem;
