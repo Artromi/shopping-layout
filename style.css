@@ -17,6 +17,7 @@
   --clr-shoe-gradient-pink: linear-gradient(to right, #ff69b4 50%, black 50%);
   --clr-shoe-gradient-red: linear-gradient(to right, red 50%, white 50%);
   --clr-shoe-gradient-black: linear-gradient(to right, black 50%, white 50%);
+  --clr-main-button: #4169e1;
 }
 
 html {
@@ -95,7 +96,7 @@ p {
 .order-area {
   background-color: var(--clr-bgr);
   border-radius: 1rem;
-  padding: 0.25rem;
+  padding: 1rem;
 }
 
 h2 {
@@ -104,17 +105,11 @@ h2 {
   background-color: var(--clr-bgr-secondary);
   padding: 0.5rem;
   border-radius: 0.25rem;
-  margin: 1rem;
-  margin-top: 1rem;
 }
 
 label,
 select {
   font-size: 0.75rem;
-}
-
-label:first-of-type {
-  margin-left: 1rem;
 }
 
 select + label {
@@ -170,11 +165,13 @@ input[value="black-white"] {
 }
 
 .button {
+  display: block;
+  margin-inline: auto;
   font-weight: bold;
   width: 100%;
   padding: 0.5rem;
-  margin: 1rem;
-  background-color: #4169e1;
+  margin-top: 1rem;
+  background-color: var(--clr-main-button);
   color: var(--clr-bgr-secondary);
   border-radius: 0.25rem;
   border: transparent;
