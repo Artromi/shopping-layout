@@ -5,10 +5,18 @@
 }
 
 :root {
-  --clr-font: #28282b;
+  --clr-font: #343434;
   --clr-font-secondary: gray;
   --clr-bgr: whitesmoke;
   --clr-bgr-secondary: white;
+  --clr-shoe-blue: #0047ab;
+  --clr-shoe-salmon: salmon;
+  --clr-shoe-black: black;
+  --clr-shoe-gradient-green: linear-gradient(to right, #4f7942 50%, black 50%);
+  --clr-shoe-gradient-blue: linear-gradient(to right, #89cff0 50%, black 50%);
+  --clr-shoe-gradient-pink: linear-gradient(to right, #ff69b4 50%, black 50%);
+  --clr-shoe-gradient-red: linear-gradient(to right, red 50%, white 50%);
+  --clr-shoe-gradient-black: linear-gradient(to right, black 50%, white 50%);
 }
 
 html {
@@ -72,15 +80,16 @@ figcaption {
 }
 
 section {
-  margin: 0.5rem;
+  padding-inline: 1rem;
 }
 
 h1 {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 p {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .order-area {
@@ -110,4 +119,49 @@ label:first-of-type {
 
 select + label {
   margin-left: 2rem;
+}
+
+#color-picker {
+  margin-top: 1rem;
+}
+
+.radio-buttons {
+  appearance: none;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 50%;
+}
+
+input[value="blue"] {
+  background-color: var(--clr-shoe-blue);
+}
+
+input[value="salmon"] {
+  background-color: var(--clr-shoe-salmon);
+}
+
+input[value="black"] {
+  background-color: var(--clr-shoe-black);
+}
+
+input[value="green-black"] {
+  background: var(--clr-shoe-gradient-green);
+}
+
+input[value="blue-black"] {
+  background-image: var(--clr-shoe-gradient-blue);
+}
+input[value="pink-black"] {
+  background-image: var(--clr-shoe-gradient-pink);
+}
+input[value="red-white"] {
+  background-image: var(--clr-shoe-gradient-red);
+}
+input[value="black-white"] {
+  background-image: var(--clr-shoe-gradient-black);
+}
+
+.radio-buttons {
+  transform: translateY(0.25rem);
 }
