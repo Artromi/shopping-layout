@@ -168,3 +168,14 @@ input[value="black-white"] {
 .radio-buttons:checked {
   border: solid red;
 }
+
+.button {
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #4169e1;
+  color: var(--clr-bgr-secondary);
+  border-radius: 0.25rem;
+  border: transparent;
+}
