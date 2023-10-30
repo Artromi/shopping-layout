@@ -128,6 +128,10 @@ select + label {
 
 /* ---COLOR PICKER--- */
 
+.color-picker {
+  margin-top: 0.5rem;
+}
+
 .radio-buttons {
   appearance: none;
   font: inherit;
