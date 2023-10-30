@@ -89,7 +89,7 @@ figcaption {
   right: 0.5rem;
 }
 
-section {
+.article-informations {
   padding-inline: 1rem;
 }
 
@@ -174,7 +174,7 @@ input[value="black-white"] {
   border: solid red;
 }
 
-.button {
+.order-button {
   display: block;
   margin-inline: auto;
   font-weight: bold;
