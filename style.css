@@ -186,3 +186,7 @@ input[value="black-white"] {
   border-radius: 0.25rem;
   border: transparent;
 }
+
+.order-button:active {
+  border: solid;
+}
