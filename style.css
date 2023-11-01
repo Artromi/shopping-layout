@@ -184,9 +184,10 @@ input[value="black-white"] {
   background-color: var(--clr-main-button);
   color: var(--clr-bgr-secondary);
   border-radius: 0.25rem;
-  border: transparent;
+  border: solid transparent;
 }
 
 .order-button:active {
-  border: solid;
+  border: solid whitesmoke;
+  font-size: 0.9rem;
 }
