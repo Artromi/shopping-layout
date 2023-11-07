@@ -187,3 +187,8 @@ input[value="black-white"] {
   border: solid whitesmoke;
   font-size: 0.9rem;
 }
+
+fieldset {
+  border-style: none;
+  padding: 0;
+}
