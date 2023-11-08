@@ -33,8 +33,9 @@ body {
 
 /* ---MAIN--- */
 main {
+  margin: 0 auto;
   padding: 0 1rem;
-  max-width: 100%;
+  max-width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 3fr));
   grid-gap: 0.5rem;
@@ -47,6 +48,8 @@ main {
   max-width: 30rem;
   position: relative;
   margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -86,6 +89,7 @@ figcaption {
   padding-inline: 1rem;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 h2 {
@@ -95,6 +99,10 @@ h2 {
 p {
   font-size: 0.75rem;
   line-height: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .order-area {
