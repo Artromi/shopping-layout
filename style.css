@@ -189,11 +189,11 @@ input[value="black-white"] {
   color: var(--clr-bgr-secondary);
   border-radius: 0.25rem;
   border: solid transparent;
+  box-shadow: 2px 2px 2px black;
 }
 
 .order-button:active {
-  border: solid whitesmoke;
-  font-size: 0.9rem;
+  box-shadow: none;
 }
 
 fieldset {

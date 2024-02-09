@@ -1,171 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="shopping-layout">
-    <meta name="author" content="Ari Senger">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="shopping-layout" />
+    <meta name="author" content="Ari Senger" />
     <title>Shopping-layout</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="product-card">
-            <figure>
-                <img src="https://camo.githubusercontent.com/386948ec10cc7166718d9ec43783e3f176fe8043abad15775d23eade78196b5b/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313536303037323831302d3163666662303966616630663f697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878382669786c69623d72622d312e322e31266175746f3d666f726d6174266669743d63726f7026773d3134373026713d3830"
-                    alt="blue asics sneaker">
-                <figcaption>
-                    Photo by Maksim Larin
-                </figcaption>
-            </figure>
-            <aside class="side-information">Free shipping!</aside>
-            <section class="article-informations">
-                <h2>Asics</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, soluta facere. Minus quae
-                    voluptatibus suscipit soluta dolor quod debitis unde!</p>
-                <section class="order-area">
-                    <h3>$65USD</h3>
-                    <form id="form-asics" class="form">
-                        <label for="asic-sizes" class="select-label">Size:</label>
-                        <select id="asic-sizes" class="sizes">
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="7.5">7.5</option>
-                            <option value="8">8</option>
-                            <option value="8.5">8.5</option>
-                        </select>
-                        <label for="asics-quantity" class="select-label">Quantity:</label>
-                        <select id="asics-quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        <div class="color-picker">
-                            <fieldset>
-                                <label for="radio-buttons">Color:</label>
-                                <input aria-label="color blue" type="radio" name="radio-buttons" value="blue"
-                                    class="radio-buttons">
-                                <input aria-label="color salmon" type="radio" name="radio-buttons" value="salmon"
-                                    class="radio-buttons">
-                                <input aria-label="color black" type="radio" name="radio-buttons" value="black"
-                                    class="radio-buttons">
-                            </fieldset>
-                        </div>
-                        <button type="button" name="button" form="form-asics" class="order-button">Add to Cart</button>
-                    </form>
-                </section>
-            </section>
+      <section class="product-card">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1560072810-1cffb09faf0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="blue asics sneaker"
+          />
+          <figcaption>Photo by Maksim Larin</figcaption>
+        </figure>
+        <aside class="side-information">Free shipping!</aside>
+        <section class="article-informations">
+          <h2>Asics</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            soluta facere. Minus quae voluptatibus suscipit soluta dolor quod
+            debitis unde!
+          </p>
+          <section class="order-area">
+            <h3>$65USD</h3>
+            <form id="form-asics" class="form">
+              <label for="asic-sizes" class="select-label">Size:</label>
+              <select id="asic-sizes" class="sizes">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="7.5">7.5</option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+              </select>
+              <label for="asics-quantity" class="select-label">Quantity:</label>
+              <select id="asics-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <div class="color-picker">
+                <fieldset>
+                  <label for="radio-buttons">Color:</label>
+                  <input
+                    aria-label="color blue"
+                    type="radio"
+                    name="radio-buttons"
+                    value="blue"
+                    class="radio-buttons"
+                  />
+                  <input
+                    aria-label="color salmon"
+                    type="radio"
+                    name="radio-buttons"
+                    value="salmon"
+                    class="radio-buttons"
+                  />
+                  <input
+                    aria-label="color black"
+                    type="radio"
+                    name="radio-buttons"
+                    value="black"
+                    class="radio-buttons"
+                  />
+                </fieldset>
+              </div>
+              <button
+                type="button"
+                name="button"
+                form="form-asics"
+                class="order-button"
+              >
+                Add to Cart
+              </button>
+            </form>
+          </section>
         </section>
+      </section>
 
-        <section class="product-card">
-            <figure>
-                <img src="https://camo.githubusercontent.com/3c412b173fef73e3c44a5aad8330234d4809c03cbc2a0dde18f260707616ed00/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f666c61676765642f70686f746f2d313535363633373634302d3263383064333230316265383f69786c69623d72622d312e322e3126697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c66487838664756756644423866487838266175746f3d666f726d6174266669743d63726f7026773d3134373026713d3830"
-                    alt="white adidas sneaker">
-                <figcaption>
-                    Photo by Daniel Storek
-                </figcaption>
-            </figure>
-            <section class="article-informations">
-                <h2>Adidas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea adipisci vero tempore similique. Dolorem
-                    voluptates molestiae consequatur iste blanditiis? Commodi.</p>
-                <section class="order-area">
-                    <h3>$30USD</h3>
-                    <form id="form-adidas" class="form">
-                        <label for="adidas-sizes" class="select-label">Size:</label>
-                        <select id="adidas-sizes" class="sizes">
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="7.5">7.5</option>
-                            <option value="8">8</option>
-                            <option value="8.5">8.5</option>
-                        </select>
-                        <label for="adidas-quantity" class="select-label">Quantity:</label>
-                        <select id="adidas-quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        <div class="color-picker">
-                            <fieldset>
-                                <label for="radio-buttons">Color:</label>
-                                <input aria-label="color green black" type="radio" name="radio-buttons"
-                                    value="green-black" class="radio-buttons">
-                                <input aria-label="color blue black" type="radio" name="radio-buttons"
-                                    value="blue-black" class="radio-buttons">
-                                <input aria-label="color pink black" type="radio" name="radio-buttons"
-                                    value="pink-black" class="radio-buttons">
-                            </fieldset>
-                        </div>
-                        <button type="button" name="button" form="form-adidas" class="order-button">Add to Cart</button>
-                    </form>
-                </section>
-            </section>
+      <section class="product-card">
+        <figure>
+          <img
+            src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="white adidas sneaker"
+          />
+          <figcaption>Photo by Daniel Storek</figcaption>
+        </figure>
+        <section class="article-informations">
+          <h2>Adidas</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea adipisci
+            vero tempore similique. Dolorem voluptates molestiae consequatur
+            iste blanditiis? Commodi.
+          </p>
+          <section class="order-area">
+            <h3>$30USD</h3>
+            <form id="form-adidas" class="form">
+              <label for="adidas-sizes" class="select-label">Size:</label>
+              <select id="adidas-sizes" class="sizes">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="7.5">7.5</option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+              </select>
+              <label for="adidas-quantity" class="select-label"
+                >Quantity:</label
+              >
+              <select id="adidas-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <div class="color-picker">
+                <fieldset>
+                  <label for="radio-buttons">Color:</label>
+                  <input
+                    aria-label="color green black"
+                    type="radio"
+                    name="radio-buttons"
+                    value="green-black"
+                    class="radio-buttons"
+                  />
+                  <input
+                    aria-label="color blue black"
+                    type="radio"
+                    name="radio-buttons"
+                    value="blue-black"
+                    class="radio-buttons"
+                  />
+                  <input
+                    aria-label="color pink black"
+                    type="radio"
+                    name="radio-buttons"
+                    value="pink-black"
+                    class="radio-buttons"
+                  />
+                </fieldset>
+              </div>
+              <button
+                type="button"
+                name="button"
+                form="form-adidas"
+                class="order-button"
+              >
+                Add to Cart
+              </button>
+            </form>
+          </section>
         </section>
+      </section>
 
-        <section class="product-card">
-            <figure>
-                <img src="https://camo.githubusercontent.com/418e0658bb2b6ba856b9fdaa1b668d92516bc8dfa3ee253e57ab44cb9412b019/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313533393138353434313735352d3736393437336132333537303f697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878382669786c69623d72622d312e322e31266175746f3d666f726d6174266669743d63726f7026773d3134373126713d3830"
-                    alt="green new balance sneaker">
-                <figcaption>
-                    Photo by Felipe Pelaquim
-                </figcaption>
-            </figure>
-            <aside class="side-information">Just one left!</aside>
-            <section class="article-informations">
-                <h2>New Balance</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus soluta aliquam et
-                    necessitatibus, pariatur ducimus ad rem doloremque similique!</p>
-                <section class="order-area">
-                    <h3>$45USD</h3>
-                    <form id="form-newbalance" class="form">
-                        <label for="new-balance-sizes" class="select-label">Size:</label>
-                        <select id="new-balance-sizes" class="sizes">
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="7.5">7.5</option>
-                            <option value="8">8</option>
-                            <option value="8.5">8.5</option>
-                        </select>
-                        <label for="new-balance-quantity" class="select-label">Quantity:</label>
-                        <select id="new-balance-quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        <div class="color-picker">
-                            <fieldset>
-                                <label for="radio-buttons">Color:</label>
-                                <input aria-label="color red white" type="radio" name="radio-buttons" value="red-white"
-                                    class="radio-buttons">
-                                <input aria-label="color black white" type="radio" name="radio-buttons"
-                                    value="black-white" class="radio-buttons">
-                            </fieldset>
-                        </div>
-                        <button type="button" name="button" form="form-newbalance" class="order-button">Add to
-                            Cart</button>
-                    </form>
-                </section>
-            </section>
+      <section class="product-card">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="green new balance sneaker"
+          />
+          <figcaption>Photo by Felipe Pelaquim</figcaption>
+        </figure>
+        <aside class="side-information">Just one left!</aside>
+        <section class="article-informations">
+          <h2>New Balance</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+            delectus soluta aliquam et necessitatibus, pariatur ducimus ad rem
+            doloremque similique!
+          </p>
+          <section class="order-area">
+            <h3>$45USD</h3>
+            <form id="form-newbalance" class="form">
+              <label for="new-balance-sizes" class="select-label">Size:</label>
+              <select id="new-balance-sizes" class="sizes">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="7.5">7.5</option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+              </select>
+              <label for="new-balance-quantity" class="select-label"
+                >Quantity:</label
+              >
+              <select id="new-balance-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <div class="color-picker">
+                <fieldset>
+                  <label for="radio-buttons">Color:</label>
+                  <input
+                    aria-label="color red white"
+                    type="radio"
+                    name="radio-buttons"
+                    value="red-white"
+                    class="radio-buttons"
+                  />
+                  <input
+                    aria-label="color black white"
+                    type="radio"
+                    name="radio-buttons"
+                    value="black-white"
+                    class="radio-buttons"
+                  />
+                </fieldset>
+              </div>
+              <button
+                type="button"
+                name="button"
+                form="form-newbalance"
+                class="order-button"
+              >
+                Add to Cart
+              </button>
+            </form>
+          </section>
         </section>
-
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
-
-
-
