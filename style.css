@@ -33,7 +33,8 @@ body {
 
 /* ---MAIN--- */
 main {
-  margin: 0 auto;
+  margin-top: 3rem;
+  margin-inline: auto;
   padding: 0 1rem;
   max-width: 80%;
   display: grid;
